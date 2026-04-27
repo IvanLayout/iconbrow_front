@@ -1789,7 +1789,7 @@ input[type=checkbox]:checked + .checkbox__flex .checkbox__text::after
 	flex-wrap: wrap;
 	color: #353535;
 	text-decoration: none;
-	transition: color .2s linear;
+	transition: background .2s linear;
 }
 
 .contacts__socials svg{
@@ -1801,7 +1801,7 @@ input[type=checkbox]:checked + .checkbox__flex .checkbox__text::after
 
 @media (any-hover: hover){
 	.contacts__socials a:hover{
-		color: #4B82AF;
+		background: rgba(53, 53, 53, 0.1);
 	}
 }
 
@@ -2029,6 +2029,13 @@ input[type=checkbox]:checked + .checkbox__flex .checkbox__text::after
 	background: rgba(53, 53, 53, 0.05);
 	border-radius: 15px;
 	padding: 10px;
+	transition: background .2s linear;
+}
+
+@media (any-hover: hover){
+	.buy-products__link:hover{
+		background: rgba(53, 53, 53, 0.1);
+	}
 }
 
 .buy-products__link img{
