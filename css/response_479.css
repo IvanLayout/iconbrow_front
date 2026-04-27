@@ -7,4 +7,16 @@
 	.main-bammer__title{
         width: 98%;
     }
+
+    .buy-products__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .buy-products__item:first-child{
+        grid-column: span 2;
+    }
+
+    .sorting{
+        flex-wrap: wrap;
+    }
 }

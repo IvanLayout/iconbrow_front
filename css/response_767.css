@@ -1,5 +1,13 @@
 @media (max-width: 767px)
 {
+    .header__socials{
+        display: none;
+    }
+
+    .header__btn{
+        display: none;
+    }
+
     .main-about__top{
         gap: 10px;
     }
@@ -148,6 +156,30 @@
 
     .contacts__item:nth-child(7){
         grid-column: span 2;
+    }
+
+
+    .buy-products__flex{
+        flex-wrap: wrap;
+    }
+
+    .buy-products .sorting{
+        width: 100%;
+    }
+
+    .sorting__select{
+        width: 100%;
+        flex-shrink: 1;
+    }
+
+
+    .buy-products__grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .buy-products__item:first-child{
+        grid-column: span 3;
+        padding-bottom: 20px;
     }
 
 

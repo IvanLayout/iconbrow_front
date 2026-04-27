@@ -27,6 +27,20 @@
     }
 
 
+    .map{
+        height: 500px;
+    }
+
+    .buy-products__link{
+        height: 100px;
+    }
+
+    .buy-products__link img{
+        width: 40px;
+        height: 40px;
+    }
+
+
     .footer{
         margin-top: 60px;
     }
