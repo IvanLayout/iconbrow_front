@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<!-- Переключение IE в последнию версию, на случай если в настройках пользователя стоит меньшая -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<!-- Адаптирование страницы для мобильных устройств -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- Запрет распознования номера телефона -->
+		<meta name="format-detection" content="telephone=no">
+		<meta name="SKYPE_TOOLBAR" content ="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+
+		<!-- Заголовок страницы -->
+		<title>Title</title>
+
+		<!-- Данное значение часто используют(использовали) поисковые системы -->
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+
+		<!-- Традиционная иконка сайта, размер 16x16, прозрачность поддерживается. Рекомендуемый формат: .ico или .png -->
+		<link rel="shortcut icon" href="favicon.ico">
+
+		<!-- Подключение файлов стилей -->
+		<link rel="stylesheet" href="css/swiper-bundle.min.css">
+		<link rel="stylesheet" href="css/wheelSlider.css">
+		<link rel="stylesheet" href="css/fancybox.css">
+		<link rel="stylesheet" href="css/styles.css">
+
+		<link rel="stylesheet" href="css/response_1400.css" media="(max-width: 1400px)">
+		<link rel="stylesheet" href="css/response_1299.css" media="(max-width: 1299px)">
+		<link rel="stylesheet" href="css/response_1199.css" media="(max-width: 1199px)">
+		<link rel="stylesheet" href="css/response_1023.css" media="(max-width: 1023px)">
+		<link rel="stylesheet" href="css/response_767.css" media="(max-width: 767px)">
+		<link rel="stylesheet" href="css/response_479.css" media="(max-width: 479px)">
+	</head>
+	<body>
+		<div class="wrap">
+			<!-- Шапка -->
+			<header class="header">
+				<div class="cont _flex">
+					<div class="heade__logo">
+						<a href="/">
+							<img src="images/logo.svg" alt="">
+						</a>
+					</div>
+
+					<div class="heade__wrap">
+						<nav class="heade__menu _flex">
+							<div class="heade__menu-item">
+								<button type="button" data-anchor="#anchor1" class="heade__menu-link scroll-btn">О бренде</button>
+							</div>
+							<div class="heade__menu-item">
+								<a href="/" class="heade__menu-link">Каталог</a>
+							</div>
+							<div class="heade__menu-item">
+								<button type="button" data-anchor="#anchor3" class="heade__menu-link scroll-btn">Контакты</button>
+							</div>
+						</nav>
+					</div>
+
+					<button type="button" class="mob-menu-btn">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+				</div>
+			</header>
+			<!-- End Шапка -->
+
+			<div class="main">
+				<section class="main-bammer">
+					<img data-src="images/tmp/main-banner.jpg" src="images/img_plug.png" alt="" class="lazyload main-bammer__img">
+					<div class="cont">
+						<div class="main-bammer__pad">
+							<div class="main-bammer__box">
+								<div class="main-bammer__title">Профессиональный <b>краситель для бровей и ресниц</b></div>
+
+								<div class="main-bammer__desc">Разработан для мастеров beauty-индустрии. 100% безопасный состав, насыщенные цвета, простое нанесение. Идеально для салонов и домашнего использования</div>
+
+								<div class="main-bammer__bot _flex">
+									<div class="main-bammer__btn">
+										<a href="/" class="btn-blue">Приобрести продукцию</a>
+									</div>
+									<div class="main-bammer__socials _flex">
+										<a href="/" target="_blank">
+											<svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M27.6571 6.0027L23.6985 24.6712C23.3999 25.9888 22.621 26.3166 21.5142 25.6961L15.4827 21.2514L12.5724 24.0506C12.2505 24.3726 11.981 24.642 11.3603 24.642L11.7936 18.4991L22.9724 8.39773C23.4584 7.96445 22.867 7.72431 22.217 8.15765L8.39723 16.8594L2.44768 14.9973C1.15354 14.5932 1.13016 13.7031 2.71701 13.0824L25.9881 4.11715C27.0655 3.71312 28.0084 4.35717 27.6571 6.0027Z"/>
+											</svg>
+										</a>
+										<a href="/" target="_blank">
+											<svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M28.1306 7.74684H23.4247C23.2326 7.74684 23.0441 7.80064 22.8793 7.90252C22.7144 8.0044 22.5794 8.15054 22.4886 8.32539C22.4886 8.32539 20.6117 11.8966 20.0088 13.0994C18.3869 16.3352 17.3366 15.3193 17.3366 13.8176V8.63954C17.3366 8.20684 17.1702 7.79187 16.8741 7.48591C16.5779 7.17995 16.1763 7.00806 15.7575 7.00806H12.2192C11.7374 6.97105 11.2543 7.06191 10.8161 7.27203C10.3778 7.48215 9.99873 7.80454 9.71498 8.20858C9.71498 8.20858 11.5116 7.90846 11.5116 10.4095C11.5116 11.0297 11.5426 12.8139 11.5707 14.3103C11.576 14.5308 11.5157 14.7477 11.398 14.9317C11.2802 15.1156 11.1106 15.2579 10.9121 15.3391C10.7136 15.4203 10.4957 15.4367 10.2879 15.386C10.0802 15.3353 9.89243 15.2199 9.75013 15.0554C8.30187 12.9744 7.10223 10.7203 6.17728 8.342C6.09784 8.16409 5.97068 8.01346 5.81087 7.90797C5.65106 7.80248 5.46532 7.74656 5.27568 7.74684C4.25511 7.74684 2.21285 7.74684 1.00003 7.74684C0.882417 7.74601 0.766372 7.7747 0.661861 7.83043C0.557349 7.88616 0.467496 7.96727 0.40002 8.06679C0.332543 8.16631 0.289462 8.28127 0.274476 8.40179C0.259491 8.5223 0.273049 8.64478 0.313987 8.75869C1.61228 12.4379 7.20493 24 13.5884 24H16.2752C16.5567 24 16.8267 23.8845 17.0257 23.6788C17.2248 23.4731 17.3366 23.1942 17.3366 22.9034V21.2272C17.3366 21.017 17.3962 20.8113 17.5079 20.6356C17.6197 20.4598 17.7787 20.3217 17.9655 20.2382C18.1523 20.1548 18.3587 20.1296 18.5592 20.1657C18.7596 20.2019 18.9455 20.2979 19.0938 20.4419L22.3097 23.5636C22.5985 23.8439 22.9799 24 23.3762 24H27.5992C29.636 24 29.636 22.5398 28.5255 21.4099C27.744 20.6147 24.9239 17.5437 24.9239 17.5437C24.6824 17.2852 24.5384 16.946 24.5178 16.5874C24.4973 16.2288 24.6015 15.8744 24.8118 15.5883C25.7234 14.3489 27.2143 12.3203 27.8467 11.4512C28.7109 10.2633 30.2752 7.74684 28.1306 7.74684Z"/>
+											</svg>
+										</a>
+										<a href="/" target="_blank">
+											<svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M15.2461 26.3499C12.9959 26.3499 11.9502 26.0214 10.1325 24.7074C8.98274 26.1856 5.34191 27.3409 5.18312 25.3644C5.18312 23.8807 4.85462 22.6269 4.48232 21.2582C4.03886 19.5719 3.53516 17.694 3.53516 14.9729C3.53516 8.47415 8.86778 3.58502 15.1859 3.58502C21.5094 3.58502 26.4643 8.71505 26.4643 15.0331C26.4855 21.2535 21.4664 26.3167 15.2461 26.3499ZM15.3392 9.20231C12.2622 9.04355 9.8642 11.1733 9.33314 14.513C8.89514 17.2779 9.67259 20.645 10.335 20.8202C10.6526 20.8968 11.4519 20.2508 11.9502 19.7526C12.774 20.3217 13.7334 20.6635 14.7315 20.7435C17.9196 20.8969 20.6439 18.4697 20.8579 15.285C20.9825 12.0936 18.5278 9.39044 15.3392 9.2078V9.20231Z"/>
+											</svg>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="products">
+					<div class="cont">
+						<div class="products__slider">
+							<div class="wheelSlider-container">
+								<div class="wheelSlider-item product">
+									<div class="product__color">
+										<img data-src="images/tmp/product_color1.jpg" src="images/img_plug.png" alt="" class="lazyload">
+									</div>
+									<div class="product__img">
+										<img data-src="images/tmp/product1.png" src="images/img_plug.png" alt="" class="lazyload">
+									</div>
+									<div class="product__name">Гель-Краска для бровей и&nbsp;ресниц</div>
+									<div class="product__desc">Светло-коричневый</div>
+								</div>
+								<div class="wheelSlider-item product">
+									<div class="product__color">
+										<img data-src="images/tmp/product_color1.jpg" src="images/img_plug.png" alt="" class="lazyload">
+									</div>
+									<div class="product__img">
+										<img data-src="images/tmp/product1.png" src="images/img_plug.png" alt="" class="lazyload">
+									</div>
+									<div class="product__name">Гель-Краска для бровей и&nbsp;ресниц</div>
+									<div class="product__desc">Светло-коричневый</div>
+								</div>
+								<div class="wheelSlider-item product">
+									<div class="product__color">
+										<img data-src="images/tmp/product_color1.jpg" src="images/img_plug.png" alt="" class="lazyload">
+									</div>
+									<div class="product__img">
+										<img data-src="images/tmp/product1.png" src="images/img_plug.png" alt="" class="lazyload">
+									</div>
+									<div class="product__name">Гель-Краска для бровей и&nbsp;ресниц</div>
+									<div class="product__desc">Светло-коричневый</div>
+								</div>
+								<div class="wheelSlider-item product">
+									<div class="product__color">
+										<img data-src="images/tmp/product_color1.jpg" src="images/img_plug.png" alt="" class="lazyload">
+									</div>
+									<div class="product__img">
+										<img data-src="images/tmp/product1.png" src="images/img_plug.png" alt="" class="lazyload">
+									</div>
+									<div class="product__name">Гель-Краска для бровей и&nbsp;ресниц</div>
+									<div class="product__desc">Светло-коричневый</div>
+								</div>
+								<div class="wheelSlider-item product">
+									<div class="product__color">
+										<img data-src="images/tmp/product_color1.jpg" src="images/img_plug.png" alt="" class="lazyload">
+									</div>
+									<div class="product__img">
+										<img data-src="images/tmp/product1.png" src="images/img_plug.png" alt="" class="lazyload">
+									</div>
+									<div class="product__name">Гель-Краска для бровей и&nbsp;ресниц</div>
+									<div class="product__desc">Светло-коричневый</div>
+								</div>
+								<div class="wheelSlider-item product">
+									<div class="product__color">
+										<img data-src="images/tmp/product_color1.jpg" src="images/img_plug.png" alt="" class="lazyload">
+									</div>
+									<div class="product__img">
+										<img data-src="images/tmp/product1.png" src="images/img_plug.png" alt="" class="lazyload">
+									</div>
+									<div class="product__name">Гель-Краска для бровей и&nbsp;ресниц</div>
+									<div class="product__desc">Светло-коричневый</div>
+								</div>
+								<div class="wheelSlider-item product">
+									<div class="product__color">
+										<img data-src="images/tmp/product_color1.jpg" src="images/img_plug.png" alt="" class="lazyload">
+									</div>
+									<div class="product__img">
+										<img data-src="images/tmp/product1.png" src="images/img_plug.png" alt="" class="lazyload">
+									</div>
+									<div class="product__name">Гель-Краска для бровей и&nbsp;ресниц</div>
+									<div class="product__desc">Светло-коричневый</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="main-about _marg" id="anchor1">
+					<div class="cont">
+						<div class="main-about__top _flex">
+							<div class="main-title main-about__main-title">О <b>БРЕНДЕ</b></div>
+
+							<div class="main-subtitle main-about__main-subtitle">ICON BROW - профессиональный бренд красителя для бровей и ресниц, предлагающий мастерам <b>самые актуальные оттенки</b>, обеспечивающие стойкий и естественный  результат при бережном воздействии на кожу и волоски</div>
+
+							<div class="main-about__btn">
+								<a href="/" class="btn-blue">Приобрести продукцию</a>
+							</div>
+						</div>
+
+						<div class="main-about__grid">
+							<div class="main-about__item"></div>
+							<div class="main-about__item main-about__item_pad">
+								<div class="professional__title">Легкость</div>
+								<div class="professional__desc">Гелевая текстура наносится за <br>5&nbsp;минут без протекания</div>
+							</div>
+							<div class="main-about__item">
+								<img data-src="images/tmp/about_img2.jpg" src="images/img_plug.png" alt="" class="lazyload main-about__img main-about__img2">
+							</div>
+							<div class="main-about__item main-about__item_pad">
+								<div class="professional__title">Стойкость</div>
+								<div class="professional__desc">Пигменты держатся до 6 недель <br>на&nbsp;любой коже</div>
+							</div>
+							<div class="main-about__item">
+								<img data-src="images/tmp/about_img1.jpg" src="images/img_plug.png" alt="" class="lazyload main-about__img">
+							</div>
+							<div class="main-about__item">
+								<img data-src="images/tmp/about_img3.jpg" src="images/img_plug.png" alt="" class="lazyload main-about__img">
+							</div>
+							<div class="main-about__item main-about__item_pad main-about__item_bg2">
+								<div class="professional__title">Безопасность</div>
+								<div class="professional__desc">Без аммиака и PPD, подходит <br>для&nbsp;чувствительной кожи</div>
+							</div>
+							<div class="main-about__item"></div>
+							<div class="main-about__item main-about__item_pad">
+								<div class="professional__title">Палитра</div>
+								<div class="professional__desc">5 насыщенных оттенков <br>для&nbsp;любого типа внешности</div>
+							</div>
+							<div class="main-about__item main-about__item_pad main-about__item_bg">
+								<div class="professional__title">Результат</div>
+								<div class="professional__desc">Идеальный профессиональный <br>эффект с&nbsp;первого нанесения</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="ingredients _marg">
+					<div class="cont">
+						<div class="ingredients__top _flex">
+							<div class="main-title ingredients__main-title">Активные <br><b>ингридиенты</b></div>
+
+							<div class="ingredients__colr _flex">
+								<div class="ingredients__wrap">
+									<div class="small-title"><b>пептиды</b></div>
+									<div class="ingredients__desc">Короткие цепочки аминокислот,  которые играют решающую роль в  построении белков, включая коллаген, необходимый для здорового роста волос</div>
+								</div>
+								<div class="ingredients__btn">
+									<a href="/" class="btn-blue">
+										<span class="btn-blue__download">Скачать каталог</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<img data-src="images/tmp/banner1.jpg" src="images/img_plug.png" alt="" class="lazyload ingredients__banner">
+				</section>
+
+				<section class="section-socials _marg">
+					<div class="cont">
+						<div class="section-socials__top _flex">
+							<div class="small-title section-socials__small-title"><b>Подписывайтесь <br>на наши соцсети</b></div>
+
+							<div class="section-socials__socials _flex">
+								<a href="/" target="_blank">
+									<svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M27.6571 6.0027L23.6985 24.6712C23.3999 25.9888 22.621 26.3166 21.5142 25.6961L15.4827 21.2514L12.5724 24.0506C12.2505 24.3726 11.981 24.642 11.3603 24.642L11.7936 18.4991L22.9724 8.39773C23.4584 7.96445 22.867 7.72431 22.217 8.15765L8.39723 16.8594L2.44768 14.9973C1.15354 14.5932 1.13016 13.7031 2.71701 13.0824L25.9881 4.11715C27.0655 3.71312 28.0084 4.35717 27.6571 6.0027Z"/>
+									</svg>
+								</a>
+								<a href="/" target="_blank">
+									<svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M28.1306 7.74684H23.4247C23.2326 7.74684 23.0441 7.80064 22.8793 7.90252C22.7144 8.0044 22.5794 8.15054 22.4886 8.32539C22.4886 8.32539 20.6117 11.8966 20.0088 13.0994C18.3869 16.3352 17.3366 15.3193 17.3366 13.8176V8.63954C17.3366 8.20684 17.1702 7.79187 16.8741 7.48591C16.5779 7.17995 16.1763 7.00806 15.7575 7.00806H12.2192C11.7374 6.97105 11.2543 7.06191 10.8161 7.27203C10.3778 7.48215 9.99873 7.80454 9.71498 8.20858C9.71498 8.20858 11.5116 7.90846 11.5116 10.4095C11.5116 11.0297 11.5426 12.8139 11.5707 14.3103C11.576 14.5308 11.5157 14.7477 11.398 14.9317C11.2802 15.1156 11.1106 15.2579 10.9121 15.3391C10.7136 15.4203 10.4957 15.4367 10.2879 15.386C10.0802 15.3353 9.89243 15.2199 9.75013 15.0554C8.30187 12.9744 7.10223 10.7203 6.17728 8.342C6.09784 8.16409 5.97068 8.01346 5.81087 7.90797C5.65106 7.80248 5.46532 7.74656 5.27568 7.74684C4.25511 7.74684 2.21285 7.74684 1.00003 7.74684C0.882417 7.74601 0.766372 7.7747 0.661861 7.83043C0.557349 7.88616 0.467496 7.96727 0.40002 8.06679C0.332543 8.16631 0.289462 8.28127 0.274476 8.40179C0.259491 8.5223 0.273049 8.64478 0.313987 8.75869C1.61228 12.4379 7.20493 24 13.5884 24H16.2752C16.5567 24 16.8267 23.8845 17.0257 23.6788C17.2248 23.4731 17.3366 23.1942 17.3366 22.9034V21.2272C17.3366 21.017 17.3962 20.8113 17.5079 20.6356C17.6197 20.4598 17.7787 20.3217 17.9655 20.2382C18.1523 20.1548 18.3587 20.1296 18.5592 20.1657C18.7596 20.2019 18.9455 20.2979 19.0938 20.4419L22.3097 23.5636C22.5985 23.8439 22.9799 24 23.3762 24H27.5992C29.636 24 29.636 22.5398 28.5255 21.4099C27.744 20.6147 24.9239 17.5437 24.9239 17.5437C24.6824 17.2852 24.5384 16.946 24.5178 16.5874C24.4973 16.2288 24.6015 15.8744 24.8118 15.5883C25.7234 14.3489 27.2143 12.3203 27.8467 11.4512C28.7109 10.2633 30.2752 7.74684 28.1306 7.74684Z"/>
+									</svg>
+								</a>
+								<a href="/" target="_blank">
+									<svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M15.2461 26.3499C12.9959 26.3499 11.9502 26.0214 10.1325 24.7074C8.98274 26.1856 5.34191 27.3409 5.18312 25.3644C5.18312 23.8807 4.85462 22.6269 4.48232 21.2582C4.03886 19.5719 3.53516 17.694 3.53516 14.9729C3.53516 8.47415 8.86778 3.58502 15.1859 3.58502C21.5094 3.58502 26.4643 8.71505 26.4643 15.0331C26.4855 21.2535 21.4664 26.3167 15.2461 26.3499ZM15.3392 9.20231C12.2622 9.04355 9.8642 11.1733 9.33314 14.513C8.89514 17.2779 9.67259 20.645 10.335 20.8202C10.6526 20.8968 11.4519 20.2508 11.9502 19.7526C12.774 20.3217 13.7334 20.6635 14.7315 20.7435C17.9196 20.8969 20.6439 18.4697 20.8579 15.285C20.9825 12.0936 18.5278 9.39044 15.3392 9.2078V9.20231Z"/>
+									</svg>
+								</a>
+							</div>
+						</div>
+
+						<div class="section-socials__slider swiper swiper_visible">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<a href="/" class="section-socials__post">
+										<span class="section-socials__post-img">
+											<img data-src="images/tmp/post_img1.jpg" src="images/img_plug.png" alt="" class="lazyload">
+										</span>
+
+										<span class="section-socials__post-name">@Alyaku</span>
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="/" class="section-socials__post">
+										<span class="section-socials__post-img">
+											<img data-src="images/tmp/post_img2.jpg" src="images/img_plug.png" alt="" class="lazyload">
+										</span>
+
+										<span class="section-socials__post-name">@Alyaku</span>
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="/" class="section-socials__post">
+										<span class="section-socials__post-img">
+											<img data-src="images/tmp/post_img3.jpg" src="images/img_plug.png" alt="" class="lazyload">
+										</span>
+
+										<span class="section-socials__post-name">@Alyaku</span>
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="/" class="section-socials__post">
+										<span class="section-socials__post-img">
+											<img data-src="images/tmp/post_img4.jpg" src="images/img_plug.png" alt="" class="lazyload">
+										</span>
+
+										<span class="section-socials__post-name">@Alyaku</span>
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="/" class="section-socials__post">
+										<span class="section-socials__post-img">
+											<img data-src="images/tmp/post_img5.jpg" src="images/img_plug.png" alt="" class="lazyload">
+										</span>
+
+										<span class="section-socials__post-name">@Alyaku</span>
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="/" class="section-socials__post">
+										<span class="section-socials__post-img">
+											<img data-src="images/tmp/post_img6.jpg" src="images/img_plug.png" alt="" class="lazyload">
+										</span>
+
+										<span class="section-socials__post-name">@Alyaku</span>
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="/" class="section-socials__post">
+										<span class="section-socials__post-img">
+											<img data-src="images/tmp/post_img1.jpg" src="images/img_plug.png" alt="" class="lazyload">
+										</span>
+
+										<span class="section-socials__post-name">@Alyaku</span>
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="/" class="section-socials__post">
+										<span class="section-socials__post-img">
+											<img data-src="images/tmp/post_img2.jpg" src="images/img_plug.png" alt="" class="lazyload">
+										</span>
+
+										<span class="section-socials__post-name">@Alyaku</span>
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="/" class="section-socials__post">
+										<span class="section-socials__post-img">
+											<img data-src="images/tmp/post_img3.jpg" src="images/img_plug.png" alt="" class="lazyload">
+										</span>
+
+										<span class="section-socials__post-name">@Alyaku</span>
+									</a>
+								</div>
+							</div>
+
+							<button type="button" class="slider-button-prev _top"></button>
+							<button type="button" class="slider-button-next _top"></button>
+						</div>
+					</div>
+				</section>
+
+				<section class="professional _marg">
+					<div class="cont">
+						<div class="professional__grid">
+							<div class="professional__item">
+								<div class="main-title"><b>ICON BROW</b> <br>PROFESSIONAL</div>
+							</div>
+							<div class="professional__item">
+								<img data-src="images/tmp/professional_img1.jpg" src="images/img_plug.png" alt="" class="lazyload professional__img">
+							</div>
+							<div class="professional__item">
+								<a href="/" class="btn-blue">
+									<span class="btn-blue__download">Скачать каталог</span>
+								</a>
+							</div>
+							<div class="professional__item professional__item_pad professional__item_bg">
+								<div class="professional__title">Миссия</div>
+								<div class="professional__desc">Наша миссия - дать возможность  уверенно выражать свой  уникальный стиль</div>
+							</div>
+							<div class="professional__item professional__item_pad">
+								<div class="professional__title">Достижения</div>
+								<div class="professional__desc">Средства для бровей и ресниц  сочетают в себе новейшие достижения науки о красоте с лучшими ингредиентами</div>
+							</div>
+							<div class="professional__item professional__item_pad">
+								<div class="professional__title">История</div>
+								<div class="professional__desc">Раскройте силу красивых бровей  с icon brow professional  – где каждая бровь рассказывает свою историю</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="section-form _marg">
+					<div class="cont">
+						<div class="section-form__grid">
+							<div class="section-form__item">
+								<div class="section-form__img">
+									<img data-src="images/tmp/img1.jpg" src="images/img_plug.png" alt="" class="lazyload">
+								</div>
+							</div>
+							<div class="section-form__item">
+								<div class="section-form__img">
+									<img data-src="images/tmp/img2.jpg" src="images/img_plug.png" alt="" class="lazyload">
+								</div>
+							</div>
+							<div class="section-form__item">
+								<form action="" class="form">
+									<div class="form__top">
+										<div class="middle-title">ВОЗНИКЛИ ВОПРОСЫ? <br><b>НАПИСАТЬ НАМ</b></div>
+
+										<div class="form__subtitle">Заполните форму, и наши специалисты <br>ответят вам в течение 48 часов.</div>
+									</div>
+
+									<div class="form__flex _flex">
+										<div class="form__line">
+											<div class="form__field">
+												<input type="text" value="" placeholder="Ваше имя *" class="form__input">
+											</div>
+										</div>
+										<div class="form__line">
+											<div class="form__field">
+												<input type="email" value="" placeholder="E-mail *" class="form__input">
+											</div>
+										</div>
+									</div>
+									<div class="form__line">
+										<div class="form__field">
+											<textarea name="" placeholder="Вопрос" class="form__textarea"></textarea>
+										</div>
+									</div>
+									<div class="checkbox checkbox_agree">
+										<label class="checkbox__label">
+											<input type="checkbox" name="">
+
+											<span class="checkbox__text">
+												Я согласен с <a href="/" target="_blank">политикой обработки персональных данных</a> и даю согласие на обработку <a href="/" target="_blank">персональных данных</a>
+											</span>
+										</label>
+									</div>
+									<div class="form__submit">
+										<button type="submit" class="form__submit-btn btn-blue btn-blue_h">Отправить</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="contacts _marg" id="anchor3">
+					<div class="cont">
+						<div class="contacts__grid">
+							<div class="contacts__item"></div>
+							<div class="contacts__item contacts__item_pad contacts__item_pad_end">
+								<div class="main-title">наши <br><b>кОНТАКТЫ</b></div>
+							</div>
+							<div class="contacts__item contacts__item_pad contacts__item_pad_end">
+								<div class="contacts__title">Адрес:</div>
+								<div class="contacts__desc">Россия, Москва, Береговой проезд д.5а, <br>корп.1 бизнес центр “Фили град”</div>
+							</div>
+							<div class="contacts__item contacts__item_pad contacts__item_pad_end">
+								<nav class="nav">
+									<div class="nav__item">
+										<a href="/" class="nav__link">О бренде</a>
+									</div>
+									<div class="nav__item">
+										<a href="/" class="nav__link">Скачать каталог</a>
+									</div>
+									<div class="nav__item">
+										<a href="/" class="nav__link">Контакты</a>
+									</div>
+								</nav>
+							</div>
+							<div class="contacts__item contacts__item_socials">
+								<div class="contacts__socials _flex">
+									<a href="/" target="_blank">
+										<svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M27.6571 6.0027L23.6985 24.6712C23.3999 25.9888 22.621 26.3166 21.5142 25.6961L15.4827 21.2514L12.5724 24.0506C12.2505 24.3726 11.981 24.642 11.3603 24.642L11.7936 18.4991L22.9724 8.39773C23.4584 7.96445 22.867 7.72431 22.217 8.15765L8.39723 16.8594L2.44768 14.9973C1.15354 14.5932 1.13016 13.7031 2.71701 13.0824L25.9881 4.11715C27.0655 3.71312 28.0084 4.35717 27.6571 6.0027Z"/>
+										</svg>
+									</a>
+									<a href="/" target="_blank">
+										<svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M28.1306 7.74684H23.4247C23.2326 7.74684 23.0441 7.80064 22.8793 7.90252C22.7144 8.0044 22.5794 8.15054 22.4886 8.32539C22.4886 8.32539 20.6117 11.8966 20.0088 13.0994C18.3869 16.3352 17.3366 15.3193 17.3366 13.8176V8.63954C17.3366 8.20684 17.1702 7.79187 16.8741 7.48591C16.5779 7.17995 16.1763 7.00806 15.7575 7.00806H12.2192C11.7374 6.97105 11.2543 7.06191 10.8161 7.27203C10.3778 7.48215 9.99873 7.80454 9.71498 8.20858C9.71498 8.20858 11.5116 7.90846 11.5116 10.4095C11.5116 11.0297 11.5426 12.8139 11.5707 14.3103C11.576 14.5308 11.5157 14.7477 11.398 14.9317C11.2802 15.1156 11.1106 15.2579 10.9121 15.3391C10.7136 15.4203 10.4957 15.4367 10.2879 15.386C10.0802 15.3353 9.89243 15.2199 9.75013 15.0554C8.30187 12.9744 7.10223 10.7203 6.17728 8.342C6.09784 8.16409 5.97068 8.01346 5.81087 7.90797C5.65106 7.80248 5.46532 7.74656 5.27568 7.74684C4.25511 7.74684 2.21285 7.74684 1.00003 7.74684C0.882417 7.74601 0.766372 7.7747 0.661861 7.83043C0.557349 7.88616 0.467496 7.96727 0.40002 8.06679C0.332543 8.16631 0.289462 8.28127 0.274476 8.40179C0.259491 8.5223 0.273049 8.64478 0.313987 8.75869C1.61228 12.4379 7.20493 24 13.5884 24H16.2752C16.5567 24 16.8267 23.8845 17.0257 23.6788C17.2248 23.4731 17.3366 23.1942 17.3366 22.9034V21.2272C17.3366 21.017 17.3962 20.8113 17.5079 20.6356C17.6197 20.4598 17.7787 20.3217 17.9655 20.2382C18.1523 20.1548 18.3587 20.1296 18.5592 20.1657C18.7596 20.2019 18.9455 20.2979 19.0938 20.4419L22.3097 23.5636C22.5985 23.8439 22.9799 24 23.3762 24H27.5992C29.636 24 29.636 22.5398 28.5255 21.4099C27.744 20.6147 24.9239 17.5437 24.9239 17.5437C24.6824 17.2852 24.5384 16.946 24.5178 16.5874C24.4973 16.2288 24.6015 15.8744 24.8118 15.5883C25.7234 14.3489 27.2143 12.3203 27.8467 11.4512C28.7109 10.2633 30.2752 7.74684 28.1306 7.74684Z"/>
+										</svg>
+									</a>
+									<a href="/" target="_blank">
+										<svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M15.2461 26.3499C12.9959 26.3499 11.9502 26.0214 10.1325 24.7074C8.98274 26.1856 5.34191 27.3409 5.18312 25.3644C5.18312 23.8807 4.85462 22.6269 4.48232 21.2582C4.03886 19.5719 3.53516 17.694 3.53516 14.9729C3.53516 8.47415 8.86778 3.58502 15.1859 3.58502C21.5094 3.58502 26.4643 8.71505 26.4643 15.0331C26.4855 21.2535 21.4664 26.3167 15.2461 26.3499ZM15.3392 9.20231C12.2622 9.04355 9.8642 11.1733 9.33314 14.513C8.89514 17.2779 9.67259 20.645 10.335 20.8202C10.6526 20.8968 11.4519 20.2508 11.9502 19.7526C12.774 20.3217 13.7334 20.6635 14.7315 20.7435C17.9196 20.8969 20.6439 18.4697 20.8579 15.285C20.9825 12.0936 18.5278 9.39044 15.3392 9.2078V9.20231Z"/>
+										</svg>
+									</a>
+								</div>
+							</div>
+							<div class="contacts__item contacts__item_big">
+								<div class="contacts__item-col">
+									<a href="tel:+74959376932" class="contacts__tel">
+										<span>+7 495 937-69-32</span>
+									</a>
+								</div>
+								<div class="contacts__item-col">
+									<a href="mailto:iconbrowpro@bigcom.ru" class="contacts__mail">
+										<span>iconbrowpro@bigcom.ru</span>
+									</a>
+
+									<button type="button" data-content="#legal-information" data-open-modal class="contacts__legal">
+										<span>Правовая информация</span>
+									</button>
+								</div>
+							</div>
+							<div class="contacts__item">
+								<a href="/" class="btn-blue contacts__btn-blue">Приобрести продукцию</a>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+
+
+			<footer class="footer">
+				<div class="cont">
+					<div class="footer__flex _flex">
+						<div class="footer__copy">&copy; 2026 Все права защищены. Icon Brow Professional</div>
+						<div class="footer__creator">
+							<span>Дизайн, разработка сайта</span>
+							<a href="/" class="footer__creator-logo">
+								<img src="images/creator.svg" alt="">
+							</a>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+
+		<div id="legal-information" class="modal">
+			<div class="modal__wrap">
+				<button type="button" data-close-modal class="modal__close">
+					<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M20 20L4 4.00003M20 4L4.00002 20" stroke-width="1.5" stroke-linecap="round" />
+					</svg>
+				</button>
+
+				<div class="modal__box">
+					<div class="modal__title small-title">Правовая <br><b>информация</b></div>
+
+					<div class="legal-information">
+						<a href="/" class="legal-information__link">
+							<span>Публичная оферта</span>
+						</a>
+						<a href="/" class="legal-information__link">
+							<span>Пользовательское соглашение</span>
+						</a>
+						<a href="/" class="legal-information__link">
+							<span>Политика конфиденциальности</span>
+						</a>
+						<a href="/" class="legal-information__link">
+							<span>Реквизиты</span>
+						</a>
+						<a href="/" class="legal-information__link">
+							<span>Лицензия</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="supports-error">
+			Ваш браузер устарел рекомендуем обновить его до последней версии<br> или использовать другой более современный.
+		</div>
+
+
+		<!-- Подключение javascript файлов -->
+		<script src="js/jquery-3.5.0.min.js"></script>
+
+		<script src="js/swiper-bundle.min.js"></script>
+		<script src="js/wheelSlider.js"></script>
+		<script src="js/fancybox.js"></script>
+		<script src="js/inputmask.min.js"></script>
+		<script src="js/nice-select.js"></script>
+
+		<script src="js/functions.js"></script>
+		<script src="js/scripts.js"></script>
+	</body>
+</html>

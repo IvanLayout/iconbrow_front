@@ -1,0 +1,33 @@
+@media (max-width: 1400px)
+{
+    ._marg{
+        margin-top: 100px;
+    }
+
+	.contacts__item:empty{
+        display: none;
+    }
+
+    .contacts__item:nth-child(2){
+        grid-column: span 2;
+    }
+
+    .contacts__desc br{
+        display: none;
+    }
+
+
+    .main-about__grid{
+        margin-top: 60px;
+    }
+
+
+    .ingredients__banner{
+        margin-top: 60px;
+    }
+
+
+    .footer{
+        margin-top: 60px;
+    }
+}

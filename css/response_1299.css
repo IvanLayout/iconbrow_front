@@ -1,0 +1,27 @@
+@media (max-width: 1299px)
+{
+    .main-title{
+        font-size: 44px;
+    }
+
+    .main-bammer__box{
+        max-width: 780px;
+    }
+
+    .main-bammer__title{
+        font-size: 44px;
+    }
+
+	.main-about__item_pad{
+        padding: 26px 18px;
+    }
+
+    .professional__item_pad{
+        padding: 26px 18px;
+    }
+
+
+    .middle-title{
+        font-size: 30px;
+    }
+}

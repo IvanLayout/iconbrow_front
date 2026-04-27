@@ -1,0 +1,149 @@
+@media (max-width: 1199px)
+{
+    body{
+        font-size: 16px;
+    }
+
+
+    .main-bammer__pad {
+        padding: 23% 0 17%;
+    }
+
+
+    .main-about__top{
+        flex-wrap: wrap;
+    }
+
+    .main-about__main-title{
+        width: 100%;
+    }
+
+    .main-subtitle{
+        max-width: none;
+        width: calc(100% - 280px)
+    }
+
+	.professional__desc br{
+        display: none;
+    }
+
+
+    .ingredients__main-title{
+        width: 38%;
+    }
+
+    
+    .section-form__item:nth-child(3){
+        padding: 20px;
+    }
+
+    .form__top{
+        margin-bottom: 30px;
+    }
+
+    .form__subtitle{
+        margin-top: 10px;
+    }
+
+    .checkbox_agree{
+        margin-top: 30px;
+    }
+
+    .form .form__submit{
+        margin-top: 30px;
+    }
+
+    .form .form__input{
+        font-size: 16px;
+        padding: 0 19px;
+        height: 41px;
+    }
+
+    .form .form__textarea{
+        font-size: 16px;
+        padding: 9px 19px;
+        height: 44px;
+    }
+
+    .checkbox__text{
+        font-size: 14px;
+    }
+
+
+    .btn-blue{
+        font-size: 16px;
+        line-height: 45px;
+    }
+
+
+    .contacts__grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .contacts__item:nth-child(2) {
+        grid-column: span 1;
+    }
+
+    .contacts__item_socials{
+        order: 3;
+        grid-column: span 3;
+    }
+
+    .contacts__socials {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .contacts__socials a{
+        height: 60px;
+    }
+
+    .contacts__legal,
+    .contacts__mail,
+    .contacts__tel{
+        min-height: 60px;
+
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .contacts__btn-blue{
+        line-height: 60px;
+    }
+
+    .nav__item + .nav__item {
+        margin-top: 10px;
+    }
+
+    .contacts__item_pad{
+        padding-bottom: 30px;
+    }
+
+
+    .legal-information__link{
+        min-height: 60px;
+    }
+
+    .legal-information{
+        margin-top: 30px;
+    }
+
+
+    .footer__creator{
+        width: calc(33.333% - 10px);
+    }
+
+
+    .modal__wrap{
+        width: 460px;
+    }
+
+    .modal__wrap{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .modal__close{
+        top: 20px;
+        right: 20px;
+    }
+}

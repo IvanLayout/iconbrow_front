@@ -1,0 +1,10 @@
+@media (max-width: 479px)
+{
+    .main-bammer__img{
+        object-position: 75% 50%;
+    }
+
+	.main-bammer__title{
+        width: 98%;
+    }
+}
