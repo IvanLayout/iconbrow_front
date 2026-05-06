@@ -125,6 +125,16 @@
         margin-top: -100px;
     }
 
+    .products .cont{
+        padding: 0;
+    }
+
+    .products__wrap{
+        max-width: 774px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
     .products__slider{
         width: 270px;
     }
