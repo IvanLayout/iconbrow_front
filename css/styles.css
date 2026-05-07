@@ -1940,6 +1940,15 @@ input[type=checkbox]:checked + .checkbox__flex .checkbox__text::after
 	overflow: hidden;
 }
 
+/* .products__slider.swiper{
+	width: 100%;
+	padding: 0;
+} */
+
+/* .products__slider .swiper-slide:not(.swiper-slide-next){
+	transform-origin: left center;
+} */
+
 .product{
 	padding: 80px 40px 40px;
 	background: #F5F5F5 url(../images/product_pattern.svg) 0 0/cover no-repeat;
@@ -1975,13 +1984,13 @@ input[type=checkbox]:checked + .checkbox__flex .checkbox__text::after
 	transition: width .5s linear;
 }
 
-.wheelSlider-container.loaded .wheelSlider-item .product__img{
+/* .wheelSlider-container.loaded .wheelSlider-item .product__img{
 	width: 64%;
 }
 
 .wheelSlider-container .wheelSlider-item.now .product__img{
 	width: 100%;
-}
+} */
 
 .product__img img{
 	display: block;
