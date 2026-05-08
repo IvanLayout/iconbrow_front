@@ -198,4 +198,13 @@
     .footer__creator{
         width: 100%;
     }
+
+    .contacts__item-col_nomob{
+        display: none;
+    }
+
+    .contacts__tel_mob{
+        display: flex;
+        margin-top: 10px;
+    }
 }

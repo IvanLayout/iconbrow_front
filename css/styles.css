@@ -1826,6 +1826,10 @@ input[type=checkbox]:checked + .checkbox__flex .checkbox__text::after
 	transition: background .2s linear;
 }
 
+.contacts__tel_mob{
+	display: none;
+}
+
 @media (any-hover: hover){
 	.contacts__tel:hover{
 		background: rgba(53, 53, 53, 0.1);
@@ -1904,6 +1908,7 @@ input[type=checkbox]:checked + .checkbox__flex .checkbox__text::after
 	background: rgba(53, 53, 53, 0.05);
 	border-radius: 15px;
 	transition: background .2s linear;
+	text-align: left;
 }
 
 @media (any-hover: hover){
